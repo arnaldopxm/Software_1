@@ -1,3 +1,9 @@
+'''
+Created on Jan 23, 2017
+@author: Arnaldo Quintero 13-11150
+         Rafael Blanco 13-10156
+'''
+
 import datetime,math
 
 class Tarifa:

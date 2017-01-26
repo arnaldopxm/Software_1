@@ -40,11 +40,11 @@ def calcularPrecio(tarifa: Tarifa, tiempoServicio: [datetime.datetime]) -> float
             cobro += (math.ceil(calcularMonto((serv/60),tarifa,day)))
 
         else:
-            cobro += (math.floor(calcularMonto((serv/60),tarifa,day)))
+            cobro += (math.ceil(calcularMonto((serv/60),tarifa,day)))
 
         return cobro
 
-i = datetime.datetime(2017,1,22,23,50)
-j = datetime.datetime(2017,1,23,00,5)
+i = datetime.datetime(2017,1,23,23,50)
+j = datetime.datetime(2017,1,24,1,30)
 tarifa = Tarifa(1,10)
 print (calcularPrecio(tarifa,[i,j]))
